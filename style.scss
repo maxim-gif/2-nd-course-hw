@@ -69,6 +69,9 @@
         height: 300px;
         padding: 32px;
         border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
         
     }
     &__item-1{
@@ -93,7 +96,6 @@
         font-size: 24px;
         line-height: 32px;
         color: #FFFFFF;
-        justify-content: end;
 
     }
 }
