@@ -53,4 +53,46 @@
 .header__link {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.games {
+  height: 556px;
+  background-image: url(./img/bgBottom.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  padding-top: 128px;
+}
+.games__item {
+  grid-column: span 4;
+  height: 300px;
+  padding: 32px;
+  border-radius: 16px;
+}
+.games__item-1 {
+  background-image: url(./img/game1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.games__item-2 {
+  background-image: url(./img/game2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.games__item-3 {
+  background-image: url(./img/game3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.games__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  justify-content: end;
 }/*# sourceMappingURL=style.css.map */
