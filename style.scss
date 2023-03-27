@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.top{
+.top {
     height: 1024px;
     background-image: url(./img/bgTop.jpg);
     background-repeat: no-repeat;
@@ -18,9 +18,10 @@
     padding-left: calc(50% - 600px);
 }
 
-.header{
+.header {
     padding-top: 217px;
-    &__title{
+
+    &__title {
         width: 788px;
         font-style: normal;
         font-weight: 700;
@@ -30,7 +31,8 @@
         color: #FFFFFF;
         margin-bottom: 32px;
     }
-    &__info{
+
+    &__info {
         width: 481px;
         font-weight: 300;
         font-size: 18px;
@@ -38,64 +40,113 @@
         color: #FFFFFF;
         margin-bottom: 44px;
     }
-    &__button{
-        background: #9C0332;
-        border-radius: 30px;
-        height: 48px;
-        width: 234px;
-        border: none;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-    }
-    &__link{
+
+    &__link {
         text-decoration: none;
         color: #FFFFFF;
     }
 }
-.games{
+
+.games {
     background-image: url(./img/bgBottom.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 32px;
+    column-gap: 32px;
     padding-top: 128px;
     padding-bottom: 128px;
-    &__item{
+
+    &__item {
         grid-column: span 4;
         height: 300px;
         padding: 32px;
         border-radius: 16px;
+        text-decoration: none;
         display: flex;
         flex-direction: column;
         justify-content: end;
-        
+
     }
-    &__item-1{
+
+    &__item-1 {
         background-image: url(./img/game1.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-    &__item-2{
+
+    &__item-2 {
         background-image: url(./img/game2.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-    &__item-3{
+
+    &__item-3 {
         background-image: url(./img/game3.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-    &__title{
+
+    &__title {
         font-size: 24px;
         line-height: 32px;
         color: #FFFFFF;
 
     }
 }
+
+.timeYear {
+    padding-top: 282px;
+    padding-bottom: 233px;
+    background-image: url(./img/bgTimeY.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__info {
+        grid-column: span 6;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF
+    }
+
+    &__logo {
+        grid-column: 8/12;
+    }
+}
+
+.button-homePage {
+    background: #9C0332;
+    border-radius: 30px;
+    height: 48px;
+    width: 234px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@import 'media';
