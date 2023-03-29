@@ -1,0 +1,75 @@
+@media (max-width:425px) {
+    .center {
+        padding-right: calc(50% - 171px);
+        padding-left: calc(50% - 171px);
+    }
+
+    .top {
+        height: 735px;
+    }
+
+    .header {
+        padding-top: 238px;
+
+        &__title {
+            width: 343px;
+            font-size: 32px;
+            line-height: 39px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__info {
+            width: 343px;
+            font-size: 14px;
+            line-height: 22px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__button {
+            display: block;
+            align-items: center;
+            margin: auto auto;
+        }
+    }
+
+    .games {
+        grid-template-columns: 1fr;
+        row-gap: 32px;
+
+        &__item {
+            grid-column: span 1;
+        }
+    }
+
+    .timeYear {
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+        padding-bottom: 85px;
+
+        &__title {
+
+            text-align: center;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__info {
+            grid-column: span 1;
+            font-size: 14px;
+            line-height: 22px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__logo {
+            grid-column: span 1;
+
+            &--mobile {
+                width: 343px;
+                height: 236px;
+            }
+        }
+    }
+}
