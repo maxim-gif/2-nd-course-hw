@@ -5,8 +5,8 @@
 // alert(a);
 
 // // Задание 2
-// const datePhone = 2007;
-// alert(datePhone)
+// const dateReleaseFirstiPhone = 2007;
+// alert(dateReleaseFirstiPhone)
 
 // // Задание 3
 // const creatorJS = "Брендан Эйх"
@@ -61,7 +61,7 @@
 // // Задание 1
 // let password = "covox";
 // let userPassword = prompt("Введите пароль");
-// (userPassword === password) ? console.log("пароль верен") : console.log("пароль неверен");
+// console.log(userPassword === password ? "пароль верен" : "пароль неверен");
 
 // // Задание 2
 // let randomNumber = Number(prompt("Введите число от 0 до 10"));
