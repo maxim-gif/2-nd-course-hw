@@ -106,3 +106,46 @@
 //         console.log("Введено некоректное значение")
 //         break;
 // }
+
+
+// Задание 1
+for (let i = 0; i < 2; i++) {
+    console.log("привет");
+    }
+
+// Задание 2
+for (let i = 1; i <=5; i++) {
+    console.log(i);
+    
+}
+
+// Задание 3
+for (let i = 7; i <=22; i++) {
+    console.log(i);
+    
+}
+
+// Задание 4
+let obj = {
+    "коля": 200,
+    "вася":300,
+    "петя":400,
+}
+for (const name in obj) {
+    console.log(`${name} зарплата ${obj[name]} доларов.`)
+}
+
+// Задание 5
+let num = 0;
+let n = 1000;
+for (n; n > 50; n/=2) {
+    num++;
+}
+console.log(`Количесттво делений ${num} итоговое число ${n} `);
+
+// Задание 6
+let firstFriday = Number(prompt("Введите дату первой пятници"));
+let numberOfDayInMonth = Number(prompt("Введите количество дней в месяце"));
+for (let dayMonth = firstFriday; dayMonth <= numberOfDayInMonth; dayMonth+=7) {
+        console.log(`Сегодня пятница ${dayMonth}-е. Необходимо подготовить отчет.`)   
+}
