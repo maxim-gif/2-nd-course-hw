@@ -43,24 +43,28 @@
         }
     }
 
+
+    .titleSection {
+        text-align: center;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .subtitleSection{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .button-homePage{
+        margin: auto auto;
+    }
     .timeYear {
         grid-template-columns: 1fr;
         row-gap: 64px;
         padding-bottom: 85px;
-
-        &__title {
-
-            text-align: center;
-            font-size: 32px;
-            line-height: 39px;
-        }
+        padding-top: 51px;
 
         &__info {
             grid-column: span 1;
-            font-size: 14px;
-            line-height: 22px;
-            align-items: center;
-            text-align: center;
         }
 
         &__logo {
@@ -71,5 +75,28 @@
                 height: 236px;
             }
         }
+    }
+    .miniGame{
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+        padding-top: 51px;
+        padding-bottom: 90px;
+        &__info {
+            grid-column: span 1;
+            grid-row: 1/-1;
+        }
+
+        &__logo {
+            grid-column: span 1;
+
+            &--mobile {
+                width: 344px;
+                height: 231px;
+            }
+        }
+    }
+    .riddle{
+        padding-top: 51px;
+        padding-bottom: 487px;
     }
 }
