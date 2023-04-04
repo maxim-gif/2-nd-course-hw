@@ -108,44 +108,139 @@
 // }
 
 
+// // Задание 1
+// for (let i = 0; i < 2; i++) {
+//     console.log("привет");
+//     }
+
+// // Задание 2
+// for (let i = 1; i <=5; i++) {
+//     console.log(i);
+    
+// }
+
+// // Задание 3
+// for (let i = 7; i <=22; i++) {
+//     console.log(i);
+    
+// }
+
+// // Задание 4
+// let obj = {
+//     "коля": 200,
+//     "вася":300,
+//     "петя":400,
+// }
+// for (const name in obj) {
+//     console.log(`${name} зарплата ${obj[name]} доларов.`)
+// }
+
+// // Задание 5
+// let num = 0;
+// let n = 1000;
+// for (n; n > 50; n/=2) {
+//     num++;
+// }
+// console.log(`Количесттво делений ${num} итоговое число ${n} `);
+
+// // Задание 6
+// let firstFriday = Number(prompt("Введите дату первой пятници"));
+// let numberOfDayInMonth = Number(prompt("Введите количество дней в месяце"));
+// for (let dayMonth = firstFriday; dayMonth <= numberOfDayInMonth; dayMonth+=7) {
+//         console.log(`Сегодня пятница ${dayMonth}-е. Необходимо подготовить отчет.`)   
+// }
+
+
+
+
 // Задание 1
-for (let i = 0; i < 2; i++) {
-    console.log("привет");
+let firstNum = Number(prompt("Введите первое число"));
+let secondNum = Number(prompt("Введите второе число"));
+
+const smallerOfTwoNumbers = (a, b) => {
+    if (a <= b) {
+        return a;
+    } else {
+        return b;
     }
+}
+console.log(smallerOfTwoNumbers(firstNumber, secondNumber));
+
 
 // Задание 2
-for (let i = 1; i <=5; i++) {
-    console.log(i);
-    
+let userNum = Number(prompt("Введите число"));
+
+const parityСheck = (number) => {
+    if (number%2 === 0) {
+        return "число четное";
+    } else {
+        return "число нечетное";
+    }
 }
+
+console.log(parityСheck(userNumber));
+
 
 // Задание 3
-for (let i = 7; i <=22; i++) {
-    console.log(i);
-    
+const squareNumber = (number) => {
+    return number*number;
 }
+const outputSquareNumber = (number) => {
+    console.log(squareNumber(number));
+}
+outputSquareNumber(userNumber);
+
 
 // Задание 4
-let obj = {
-    "коля": 200,
-    "вася":300,
-    "петя":400,
+const userAge = () => {
+    let age  = Number(prompt("Введите свой возраст"));
+    if (age <= 0) {
+        console.log("Введенo неправильное число")
+    } else {
+        (age > 0 && age < 13) ? console.log("Привет, друг!"):console.log("Добро пожаловать!");
+    }
 }
-for (const name in obj) {
-    console.log(`${name} зарплата ${obj[name]} доларов.`)
-}
+userAge();
+
 
 // Задание 5
-let num = 0;
-let n = 1000;
-for (n; n > 50; n/=2) {
-    num++;
-}
-console.log(`Количесттво делений ${num} итоговое число ${n} `);
+let firstNumber = prompt("Введите первое число");
+let secondNumber = prompt("Введите второе число");
+const correctnessCheck = (a, b) => {
+    if (isNaN(a) || isNaN(b)) {
+        return "Одно или оба значения не являются числом";
+    } else {
+        return a*b;
+    }
+}    
+console.log(correctnessCheck(firstNumber, secondNumber));
 
 // Задание 6
-let firstFriday = Number(prompt("Введите дату первой пятници"));
-let numberOfDayInMonth = Number(prompt("Введите количество дней в месяце"));
-for (let dayMonth = firstFriday; dayMonth <= numberOfDayInMonth; dayMonth+=7) {
-        console.log(`Сегодня пятница ${dayMonth}-е. Необходимо подготовить отчет.`)   
+let userNumber = Number(prompt("Введите число"));
+const cubeOfNumber = (n) => {
+    isNaN(n)?console.log("Переданный параметр не является числом"):console.log(`n в кубе равняется ${n**3}`)
 }
+cubeOfNumber(userNumber);
+
+
+// Задание 7
+function getArea() {
+    return 3.14*(this.radius**2);
+}
+function getPerimeter() {
+    return 2*3.14*this.radius;
+}
+let circle1 = {
+    radius: 14,
+    area: getArea,
+    perimeter: getPerimeter,
+}
+let circle2 = {
+    radius: 6,
+    area: getArea,
+    perimeter: getPerimeter,
+}
+console.log(circle1.area());
+console.log(circle2.area());
+console.log(circle1.perimeter());
+console.log(circle2.perimeter());
