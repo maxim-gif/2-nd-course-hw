@@ -116,13 +116,13 @@
 // // Задание 2
 // for (let i = 1; i <=5; i++) {
 //     console.log(i);
-    
+
 // }
 
 // // Задание 3
 // for (let i = 7; i <=22; i++) {
 //     console.log(i);
-    
+
 // }
 
 // // Задание 4
@@ -244,3 +244,34 @@
 // console.log(circle2.area());
 // console.log(circle1.perimeter());
 // console.log(circle2.perimeter());
+
+
+
+function timeYear() {
+    let monthNumber = prompt("Введите номер месяца");
+    if (isNaN(monthNumber)) {
+        alert("Не числовое значение");
+    } else {
+        monthNumber = Number(monthNumber);
+
+        if (monthNumber > 2 && monthNumber <= 5) {
+            alert("Весна");
+        } else {
+
+            if (monthNumber > 5 && monthNumber <= 8) {
+                alert("Лето");
+            } else {
+                if (monthNumber > 8 && monthNumber <= 11) {
+                    alert("Осень");
+                } else {
+                    if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+                        alert("Зима");
+                    } else {
+                        alert("Нет такого месяца");
+                    }
+                }
+            }
+        }
+    }
+
+}
