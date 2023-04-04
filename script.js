@@ -250,7 +250,7 @@
 function timeYear() {
     let monthNumber = prompt("Введите номер месяца");
     if (isNaN(monthNumber)) {
-        alert("Не числовое значение");
+        alert("Не числовое значение. Будьте внимательнее");
     } else {
         monthNumber = Number(monthNumber);
 
@@ -267,7 +267,7 @@ function timeYear() {
                     if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
                         alert("Зима");
                     } else {
-                        alert("Нет такого месяца");
+                        alert("Нет такого месяца. Попробуйте заново");
                     }
                 }
             }
