@@ -197,7 +197,7 @@
 //     if (age <= 0) {
 //         console.log("Введенo неправильное число")
 //     } else {
-//         (age > 0 && age < 13) ? console.log("Привет, друг!"):console.log("Добро пожаловать!");
+//         (age > 0 && age < 13) ? alert("Привет, друг!"):alert("Добро пожаловать!");
 //     }
 // }
 // userAge();
@@ -267,7 +267,7 @@ function timeYear() {
                     if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
                         alert("Зима");
                     } else {
-                        alert("Нет такого месяца. Попробуйте заново");
+                        alert("Нет такоalertПопробуйте заново");
                     }
                 }
             }

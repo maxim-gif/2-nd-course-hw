@@ -57,11 +57,16 @@
   grid-column: span 4;
   height: 300px;
   padding: 32px;
-  border-radius: 16px;
+  border-radius: 20px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: all 0.3s ease-in-out;
+}
+.games__item:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 4px #b2ccec;
 }
 .games__item-1 {
   background-image: url(./img/game1.jpg);
@@ -128,10 +133,23 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
+  transition: all 150ms ease-in-out;
 }
 .button-homePage:hover {
-  cursor: pointer;
+  background: #0ef319;
+  transform: scale(1.05);
+}
+
+.third {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
 .miniGame {
