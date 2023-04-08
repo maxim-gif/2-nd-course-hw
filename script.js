@@ -247,31 +247,163 @@
 
 
 
-function timeYear() {
-    let monthNumber = prompt("Введите номер месяца");
-    if (isNaN(monthNumber)) {
-        alert("Не числовое значение. Будьте внимательнее");
-    } else {
-        monthNumber = Number(monthNumber);
+// function timeYear() {
+//     let monthNumber = prompt("Введите номер месяца");
+//     if (isNaN(monthNumber)) {
+//         alert("Не числовое значение. Будьте внимательнее");
+//     } else {
+//         monthNumber = Number(monthNumber);
 
-        if (monthNumber > 2 && monthNumber <= 5) {
-            alert("Весна");
-        } else {
+//         if (monthNumber > 2 && monthNumber <= 5) {
+//             alert("Весна");
+//         } else {
 
-            if (monthNumber > 5 && monthNumber <= 8) {
-                alert("Лето");
-            } else {
-                if (monthNumber > 8 && monthNumber <= 11) {
-                    alert("Осень");
-                } else {
-                    if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
-                        alert("Зима");
-                    } else {
-                        alert("Нет такоalertПопробуйте заново");
-                    }
-                }
-            }
-        }
-    }
+//             if (monthNumber > 5 && monthNumber <= 8) {
+//                 alert("Лето");
+//             } else {
+//                 if (monthNumber > 8 && monthNumber <= 11) {
+//                     alert("Осень");
+//                 } else {
+//                     if (monthNumber === 12 || monthNumber === 1 || monthNumber === 2) {
+//                         alert("Зима");
+//                     } else {
+//                         alert("Нет такоalertПопробуйте заново");
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
+// }
+
+function getRandomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+// Задание 1
+console.log(" ---------Задание номер 1");
+const numbs = [1, 5, 4, 10, 0, 3];
+
+for (let i = 0; i < numbs.length; i++) {
+    console.log(numbs[i]);
+    if (numbs[i] === 10) break;
+};
+
+
+// Задание 2
+console.log(" ---------Задание номер 2");
+console.log(numbs.indexOf(4));
+
+
+// Задание 3
+console.log(" ---------Задание номер 3");
+let numbers = [1, 3, 5, 10, 20];
+numbers = numbers.join(' ');
+console.log(numbers);
+
+
+// Задание 4
+console.log(" ---------Задание номер 4");
+const arr = [];
+for (let index = 0; index < 3; index++) {
+    arr[index] = [];
+    for (let idx = 0; idx < 3; idx++) {
+        arr[index][idx] = 1;
+    }
+}
+console.log(arr);
+
+
+// Задание 5
+console.log(" ---------Задание номер 5");
+const num = [1, 1, 1];
+for (let index = 0; index < 2; index++) {
+    num.push(2);
+}
+console.log(num);
+
+
+// Задание 6,7
+console.log(" ---------Задание номер 6, 7");
+let numStr = [9, 8, 7, 'a', 6, 5];
+let del = numStr.indexOf("a");
+numStr.splice(del, 1);
+let userNumber = Number(prompt("Введите число от 1 до 10"));
+(numStr.includes(userNumber)) ? console.log("данное число присутствует в данном массиве") : console.log("данного числа нет");
+numStr = numStr.sort();
+console.log(numStr);
+
+
+// Задание 8
+console.log(" ---------Задание номер 8");
+const str = 'abcdef';
+console.log(str.split('').reverse().join(''));
+
+
+// Задание 9
+console.log(" ---------Задание номер 9");
+const twoDimArr = [[1, 2, 3,], [4, 5, 6]];
+console.log(twoDimArr.splice(0, 1)[0].concat(twoDimArr[0]));
+
+
+// Задание 10,11
+console.log(" ---------Задание номер 10, 11");
+let numeric = [];
+for (let index = 0; index < 10; index++) {
+    numeric[index] = getRandomInRange(1, 10);
+}
+console.log(numeric);
+for (let index = 0; index < numeric.length; index++) {
+    (index !== 9) ? console.log(`сумма элемента ${index} и элемента ${index + 1} = ${numeric[index] + numeric[index + 1]}`) : console.log(`элемент ${index} = ${numeric[index]}`);
+}
+const squareNumber = (arr) => {
+    return arr = arr.map(value => (value * value));
+}
+console.log(squareNumber(numeric));
+
+
+// Задание 12
+console.log(" ---------Задание номер 12");
+let word = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+const getLengthWords = (arr) => {
+    return arr = arr.map(value => (value.length));
+}
+console.log(getLengthWords(word));
+
+
+// Задание 13
+console.log(" ---------Задание номер 13");
+let randomNumber = [];
+for (let index = 0; index < 10; index++) {
+    randomNumber[index] = getRandomInRange(-10, 10);
+}
+console.log(randomNumber);
+const negativeValue = (arr) => {
+    return arr = arr.filter(value => value < 0);
+}
+console.log(negativeValue(randomNumber));
+
+
+// Задание 14
+console.log(" ---------Задание номер 14");
+let randomNumb = [];
+for (let index = 0; index < 10; index++) {
+    randomNumb[index] = getRandomInRange(0, 10);
+}
+console.log(randomNumb);
+console.log(randomNumb.filter(value => value % 2 === 0));
+
+
+// Задание 15
+console.log(" ---------Задание номер 15");
+let randomNum = [];
+for (let index = 0; index < 6; index++) {
+    randomNum[index] = getRandomInRange(0, 10);
+}
+let sum = 0;
+for (const number of randomNum) {
+    sum += number;
+}
+console.log(randomNum);
+console.log(` арифметическое = ${sum / randomNum.length}`);
